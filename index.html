@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSUN Map Quiz</title>
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" async></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxlwzB9H0M69kgySN9OywsP87qE82U4DE"
+      async
+      defer
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>CSUN Map Quiz</h1>
+    </header>
+    <h2>
+      Double click on the map where you think the following location is:
+      <div class="prompt"></div>
+    </h2>
+    <div id="notification"><div id="desc"></div></div>
+    <div class="content">
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+      <div class="details">
+        <section id="clock">
+          <div class="timer">00:00:00</div>
+        </section>
+        <ul></ul>
+        <div id="score"></div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-2.2.1.min.js"
+      integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
