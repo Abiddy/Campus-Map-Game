@@ -1,0 +1,135 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  height: auto;
+  color: #D22030;
+  width: 100%;
+  text-align: center;
+}
+
+header h1 {
+  padding: 30px 0 10px;
+  font-family: "Bungee Shade", cursive;
+  font-size: 34px;
+  margin: 0;
+}
+
+h2 {
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
+}
+
+h2 .prompt {
+  color: #FDBF56;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 25px 0;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.content {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.map-container {
+  min-height: 800px;
+  min-width: 820px;
+}
+
+#map {
+  height: 100%;
+}
+
+#score {
+  color: #2CA5DA;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#clock {
+  height: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #55565A;
+}
+
+#score,
+#clock {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.timer {
+  font-size: 20px;
+}
+
+.details {
+  width: 300px;
+}
+
+
+#notification {
+  font-family: Monaco;
+  visibility: hidden;
+  width: fit-content;
+  margin: auto;
+  background: #2D4263;
+  text-align: center;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 50%;
+  white-space: nowrap;
+  opacity: 90%;
+}
+
+#notification #desc {
+  font-size: 30px;
+  color: white;
+  padding: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* Called when the "show" class is called in JQuery */
+#notification.show {
+  visibility: visible;
+  animation: fadein 1s;
+}
+
+/* notification styles animation */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
